@@ -72,17 +72,16 @@
         <script>
 		function setCookie(c_name,value,exdays)
  		{
- 			var exdate=new Date();
- 			exdate.setDate(exdate.getDate() + exdays);
- 			var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
- 			document.cookie=c_name + "=" + c_value;
+ 		 var exdate=new Date();
+ 		 exdate.setDate(exdate.getDate() + exdays);
+ 		 var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+ 		 document.cookie=c_name + "=" + c_value;
  		}
  
 		</script>
 	</head>
 	<body>
-
-		<div class="body">
+ 	    <div class="body">
 			<header>
 				<div class="container">
 					<h1 class="logo">
@@ -92,7 +91,7 @@
 					</h1>
 					<div class="search" align="right">
 						<form class="form-search" id="searchForm" action="page-search-results.html" method="get" > 
-								<input type="button" class="btn btn-primary" name="sign Up" value="Sign up for newsletter" width="340" onclick="document.getElementById('name_1').focus();" style="background: #FF9920;"></input>
+						<input type="button" class="btn btn-primary" name="sign Up" value="Sign up for newsletter" width="340" onclick="document.getElementById('name_1').focus();" style="background: #FF9920;"></input>
 						</form>
 					</div>
 					<div class="social-icons">
@@ -107,9 +106,8 @@
 					<nav>
 						<ul class="nav nav-pills nav-main" id="mainMenu">
 							<li>
-								<a href="index.html">
-									Home
-								</a>
+							    <a href="index.html">Home
+							    </a>
 							</li>
 							<li class="dropdown">
 								<a class="dropdown-toggle" href="#">
